@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { relative } from "path";
 import Intro from "@/components/Intro";
+import Twitch from "@/components/Twitch";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,6 +22,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
         <Header />
         <Intro />
+        <Twitch />
         {children}
       </body>
     </html>
